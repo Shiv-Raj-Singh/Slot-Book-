@@ -25,7 +25,7 @@ export default function BookSlot(){
         try {
         
             console.log(user);
-            const response = await axios.post("http://localhost:5000/bookSlot" , user)
+            const response = await axios.post("https://book-slot.onrender.com/bookSlot" , user)
             const data = await response.data
             console.log(data);
             data.status&&toast.success(data.message , {position : 'top-center'}) 
