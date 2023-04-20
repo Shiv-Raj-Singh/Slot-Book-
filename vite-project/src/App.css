@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(75, 97, 62);
+}
+
+.JoinPage2{
+  background-image: radial-gradient( green ,yellow , red , green, rgb(68, 32, 32) , rgb(8, 8, 61 ));
+  border-radius: 5%;
+  height: 80vh;
+  width: 70vw;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10%;
+  padding: 4%;
+}
+
+.customFormLogin{
+  background-color: rgba(164, 187, 121, 0.603);
+  border-radius: 3%;
+  padding: 5%;
+  /* height: 65vh; */
+  margin-bottom: 5%;
+}
+
+#btn2{
+  color: rgb(176, 247, 11);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;    
+  justify-content: center;
+  background-color: rgb(90, 48, 92);
+  text-align: center;
+  font-size: 1.3rem;
+  width: 20vw;
+  padding: 0.5% , 2%;
+  margin: auto;
+  border-radius: 5%;
+  margin-top: 5%;
+} 
+
+#btn2:hover{
+  color: rgb(201, 206, 224);
+  background-color: rgb(93, 16, 182);
+}
+
+
+@media (max-width:700px) {
+  body{
+    background-color: rgb(94, 85, 85);
+  }
+
+  .JoinContainer{
+    /* border: 2px solid black; */
+    width: 90vw;
+    height: 70vh;
+    margin:  auto;
+    /* background-color: rgb(85, 121, 148); */
+  }
+
+  .JoinPage2{
+    width: 98vw;
+    height: 75vh;
+    margin:  auto;
+    /* background-color: rgb(21, 226, 226); */
+  }
+  .form-check{
+    display: flex ;
+    flex-direction:column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center;
+    width: 100%;
+    width: 100%; */
+
+  }
+  #btn2{
+      width : 50vw;
+      background-color: rgb(18, 77, 59);
+      
+  } 
+
+  input:focus{
+    color: rgb(13, 14, 12);
+    background-color: rgb(252, 186, 107);
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  }
+
+  
+  }
+  
+}
+@media (max-width: 450px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .JoinContainer{
+    width: 98%;
+    margin-top: 20vh;
+
+  }
+
+  .JoinPage2{
+    height: 60vh;
+    padding: 3%;
+    width: 100%;
+    margin: 1%;
+    padding-bottom: 2%;
+  }
+
+  .pLink{
+    color: rgb(45, 11, 238);
+    display: block;
+    font-size: 14px;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
