@@ -3,17 +3,15 @@ import {Schema , model} from 'mongoose';
 const TimeSlotSchema = new Schema(
     {
     startTime: {
-        type: Number, 
-        unique : true ,
+        type: String, 
         required : true
         
     } ,
-    startTime: {
-        type: Number, 
-        unique : true,
+    endTime: {
+        type: String, 
         required : true
     } ,
-    date: Number,
+    date: String,
     
 
 }, {timestamps : true })
