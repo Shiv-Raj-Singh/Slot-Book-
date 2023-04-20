@@ -1,0 +1,28 @@
+{
+  "name": "slot-book-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon src/app.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shiv-Raj-Singh/Slot-Book-Task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shiv-Raj-Singh/Slot-Book-Task/issues"
+  },
+  "homepage": "https://github.com/Shiv-Raj-Singh/Slot-Book-Task#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "mysql": "^2.18.1"
+  }
+}
