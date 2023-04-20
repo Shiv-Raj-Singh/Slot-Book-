@@ -1,6 +1,12 @@
 export function isValidDate(val){
     
-    const [year , month , date]  = val.split("-")
+    let arr = val.split(':')
+    if(arr.length !== 3){
+        arr = val.split('-')
+    }
+    arr = arr.map(a=>Number(a))
+    const [year , month , date]  = arr
+    
     const currDate = new Date().getDate()
     const currMonth = new Date().getMonth() + 1
     const currYear = new Date().getFullYear()
@@ -12,6 +18,9 @@ export function isValidDate(val){
     return true
     
 }
+
+
+
 
 export function isToday(val){
     let arr = val.split(':')
@@ -30,33 +39,40 @@ export function isToday(val){
 }
 
 
-// console.log(isToday('2023-04-21'));
+
 
 export function isValidTime(start , end){
     let arr1 = start.split(':')
     if(arr1.length == 1){
         arr1 = start.split('-')
     }
+    
     let arr2 = end.split(':')
     if(arr2.length == 1){
         arr2 = end.split('-')
     }
-
+    arr1 = arr1.map(a=>Number(a))
+    arr2 = arr2.map(a=>Number(a))
+    console.log(arr1, arr2);
     let [startHour , startMin , startSecond]  = arr1
     let [endHour , endMin , endSecond]  = arr2
 
+    if(startHour > endHour && startHour <= 12) return false
+    if(startHour > 12 ){
+        let ans = startHour - 12
+        if(ans > endHour && endHour < 12) return false
+        if (ans > endHour && endHour > 12 && ans > endHour - 12) return false
+
+    }
+    if(startHour == endHour && startMin >= endMin)  return false    
+
     const currHor = new Date().getHours()
+    console.log(currHor);
     const currMint = new Date().getMinutes()
     
-    if(currHor > 12 && startHour < 12){
-        let Hour = currHor - 12
-        if(Hour > startHour) return false
-    }
+    if(currHor > startHour) return false
 
-    console.log(startHour , startMin);
-    // return startTime <= endTime
+    return true 
 }
 
-let s  = '10:40' , e = '10:35'
-console.log(isValidTime(s , e));
-
+console.log(isValidTime('21:30' , '17:15'));

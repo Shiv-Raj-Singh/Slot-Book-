@@ -11,10 +11,10 @@ const TimeSlotSchema = new Schema(
         type: String, 
         required : true
     } ,
-    date: String,
+    date: String, 
     
 
 }, {timestamps : true })
 
-const SlotModel = new model("Slot-Book" , TimeSlotSchema)
+const SlotModel = new model("Slot-Booking" , TimeSlotSchema)
 export default SlotModel
