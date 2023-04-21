@@ -1,5 +1,4 @@
 export function isValidDate(val){
-    
     let arr = val.split(':')
     if(arr.length !== 3){
         arr = val.split('-')
@@ -15,9 +14,14 @@ export function isValidDate(val){
     if(year == currYear && Number(month) < currMonth) return false
     if(year == currYear && month == currMonth && currDate > date) return false
 
+    const isStr = /^[a-zA-Z]*$/
+    
+    if(isStr.test(val)) return false
     return true
     
 }
+
+
 
 
 
@@ -34,6 +38,7 @@ export function isToday(val){
     const currYear = new Date().getFullYear()
 
     if(year == currYear && month == currMonth && currDate == date) return true
+
     return false
 
 }
@@ -75,4 +80,3 @@ export function isValidTime(start , end){
     return true 
 }
 
-console.log(isValidTime('21:30' , '17:15'));

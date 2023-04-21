@@ -5,9 +5,6 @@ import cors from 'cors';
 import './db.js';
 import { globalError } from './Auth/globalError.js';
 import slotCon from './Controller/slotCon.js';
-// import {globalError} from './globalError.js';
-// import createShortUrl , { redirectUrl } from './controller.js';
-
 
 
 const app = express()
