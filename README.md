@@ -1,9 +1,10 @@
 ### Slot-Booking Task 
 
-###### there I have created 2 branches -
+###### there I have created 3 branches -
 
 - main branch   for frontend used react , bootstrap 
-- server branch for server side programming 
+- server branch for server side programming along with NoSQL (MONGO-DB) Database 
+- mysql in that i have done backend with MySQL Database 
 
 ### Model 
 
