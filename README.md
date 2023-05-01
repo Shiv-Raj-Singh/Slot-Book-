@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 ### Slot-Booking Task 
 
 ###### there I have created 3 branches -
@@ -38,4 +38,5 @@
 
 ```-
 - #### Live Project    https://slot-books.netlify.app/
->>>>>>> fb0d56da0d35017168042a30707f3027b9912810
+
+
