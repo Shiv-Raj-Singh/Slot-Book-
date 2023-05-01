@@ -1,0 +1,8 @@
+POST http://localhost:5000/bookSlot
+Content-Type: application/json
+
+{
+    "date" : "2026:05:25",
+    "startTime":"10:12",
+    "endTime":"12:12"
+}
