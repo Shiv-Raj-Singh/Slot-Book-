@@ -37,6 +37,5 @@
 }
 
 ```-
+
 - #### Live Project    https://slot-books.netlify.app/
-
-
